@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriller Book Back Cover</title>
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        .book-cover {
+            width: 420px;
+            height: 620px;
+            background: radial-gradient(circle at top right, #4a0404 0%, #1a0000 55%, #0a0000 100%);
+            color: #f5f5f5;
+            padding: 35px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 8px solid #dc143c;
+            border-top: 1px solid #800000;
+        }
+
+        .genre-tag {
+            color: #ff4d6d;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .hook-quote {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 1.3;
+            margin: 0 0 18px 0;
+            border-left: 3px solid #dc143c;
+            padding-left: 12px;
+        }
+
+        .blurb {
+            font-size: 13.5px;
+            line-height: 1.65;
+            color: #d6d3d1;
+            text-align: justify;
+            margin-bottom: 18px;
+        }
+
+        .blurb span {
+            color: #ff758f;
+            font-weight: bold;
+        }
+
+        .reviews {
+            background-color: rgba(220, 20, 60, 0.12);
+            border: 1px solid rgba(220, 20, 60, 0.35);
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .reviews p {
+            margin: 0 0 6px 0;
+            font-size: 12px;
+            font-style: italic;
+            color: #f8fafc;
+        }
+
+        .reviews p:last-child {
+            margin-bottom: 0;
+        }
+
+        .reviewer {
+            font-style: normal;
+            font-weight: bold;
+            color: #ff4d6d;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11px;
+        }
+
+        .author-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-top: 1px solid rgba(220, 20, 60, 0.4);
+            padding-top: 15px;
+        }
+
+        .author-img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #dc143c;
+            background-color: #2b0000;
+        }
+
+        .author-info h4 {
+            margin: 0 0 4px 0;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ff4d6d;
+        }
+
+        .author-info p {
+            margin: 0;
+            font-size: 11.5px;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 15px;
+        }
+
+        .publisher {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: #a8a29e;
+        }
+
+        .isbn-box {
+            background-color: #f8fafc;
+            color: #000000;
+            padding: 4px 9px;
+            border-radius: 2px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 10.5px;
+        }
+
+        .barcode {
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book-cover">
+        <div>
+            <div class="genre-tag">Psychological Thriller • Bestseller</div>
+            <div class="hook-quote">"Every secret leaves a crimson trail."</div>
+            
+            <p class="blurb">
+                When forensic archivist <span>Elena Vance</span> discovers an encrypted ledger hidden beneath an abandoned clocktower, she realizes the city's most powerful figures are bound by a decades-old disappearance.
+            </p>
+            <p class="blurb">
+                With a relentless assassin closing in and forty-eight hours before the next strike, Elena must decode the final cipher—before her own name becomes the next entry.
+            </p>
+
+            <div class="reviews">
+                <p>"A razor-sharp thriller that will keep you awake past midnight." <span class="reviewer">— THE DAILY CHRONICLE</span></p>
+                <p>"Relentless pacing with a twist you will never see coming." <span class="reviewer">— NOIR REVIEW</span></p>
+            </div>
+        </div>
+
+        <div>
+            <div class="author-section">
+                <img src="author.jpg" alt="Author Photo" class="author-img">
+                <div class="author-info">
+                    <h4>Julian Mercer</h4>
+                    <p>Julian Mercer is the internationally bestselling author of six psychological thrillers translated into over twenty languages.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="publisher">CRIMSON INK PRESS</div>
+                <div class="isbn-box">
+                    <div>ISBN 978-1-9821-4509-2</div>
+                    <div class="barcode">|| ||| | |||| || |||</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
